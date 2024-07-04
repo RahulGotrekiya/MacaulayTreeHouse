@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "Myriad-pro", "Londrina Solid", "Roboto";
+  src: url(../fonts/myriad-web-pro.ttf);
+}
+
+:root {
+  /*colors*/
+  --primary-color: #00671a;
+  --secondary-color: #fccb00;
+  --primary-dark: #2f2f2f;
+  --primary-light: #fff;
+  --footer-dark: #282728;
+  --secondary-heading: #3a362c;
+  --pure-black: #000;
+
+  /*Fonts*/
+  --primary-font: "Londrina Solid", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+
+  /*spacing*/
+  --s: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+  line-height: 1.1;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.common-btn {
+  width: 18.125rem;
+  line-height: 6.125rem;
+  display: block;
+  font-size: 1.531rem;
+  color: var(--primary-light);
+  text-transform: uppercase;
+  letter-spacing: 0.175rem;
+  text-align: center;
+  background: url(../images/btn-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+
+.common-btn:hover {
+  transition: 0.5s;
+  background: url(../images/btn-bg-hover.png);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 7.389rem;
+  color: var(--text-dark);
+  letter-spacing: 0.313rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Header */
+
+.full-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1665px;
+  height: 115px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--primary-light);
+  box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.27);
+  border-radius: 0 0 20px 20px;
+}
+
+.logo a {
+  padding: 0.8rem 0 0 1.313rem;
+}
+
+.header-right {
+  display: flex;
+  height: 100%;
+}
+
+.header-contact {
+  display: flex;
+  padding: 0 2.875rem 0 2.875rem;
+  background-color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header-contact a {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.929rem;
+  color: var(--pure-black);
+}
+
+.header-contact a:nth-child(2) {
+  padding-left: var(--s);
+}
+
+.header-contact a strong {
+  font-size: 1.22rem;
+  width: 100%;
+  font-weight: 400;
+}
+
+.header-contact:hover img {
+  transform: rotate(20deg);
+  color: var(--secondary-color);
+}
+
+.header-contact:hover a {
+  color: var(--primary-color);
+}
+
+.header-menu {
+  background-color: var(--primary-color);
+  border-bottom-right-radius: var(--s);
+}
+
+.header-menu nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.75rem;
+}
+
+.hamburger {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  background-image: url(../images/hamburger-bg.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburger > div {
+  width: var(--s);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 0.188rem;
+  display: block;
+  margin: 0.15rem 0;
+  background: var(--primary-color);
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover .line:nth-child(2) {
+  width: 100%;
+}
+
+.hamburger .line:nth-child(2) {
+  width: 15px;
+}
