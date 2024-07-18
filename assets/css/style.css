@@ -231,12 +231,41 @@ a {
 
 .right img {
   position: relative;
-  left: 127px;
-  top: 5px;
+  left: 64px;
+  top: 4px;
 }
 
 .hero-main > img {
   position: absolute;
   left: 140px;
   top: 221px;
+}
+
+.hero-arrows {
+  padding-top: 150px;
+  display: flex;
+  gap: 23px;
+}
+
+.hero-arrows button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-arrows .btn-prev:active img,
+.hero-arrows .btn-next:active img {
+  transform: scale(0.86);
+}
+
+.heading-slider {
+  max-width: 700px;
+}
+
+.slick-current {
+  height: 100% !important;
+}
+
+.slick-problem {
+  height: 100% !important;
 }
