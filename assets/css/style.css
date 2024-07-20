@@ -29,10 +29,12 @@
   box-sizing: border-box;
   transition: 0.5s ease;
   line-height: 1.1;
+  font-weight: 400;
 }
 
 body {
   font-family: var(--primary-font);
+  color: var(--primary-dark);
 }
 
 .common-btn {
@@ -55,7 +57,8 @@ body {
   background-image: url(../images/btn-bg-hover.png);
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--heading-font);
   font-size: 7.38rem;
   color: var(--primary-dark);
@@ -63,9 +66,22 @@ h1 {
   line-height: 1.2;
 }
 
+h2 {
+  font-size: 4.5rem;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  word-spacing: -0.1rem;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+p {
+  font-size: 1.125rem;
+  font-family: var(--secondary-font);
 }
 
 /* Header */
@@ -258,14 +274,13 @@ a {
   transform: scale(0.86);
 }
 
+.swiper {
+  width: 700px;
+  height: auto;
+  margin-left: 0 !important;
+  cursor: default;
+}
+
 .heading-slider {
   max-width: 700px;
-}
-
-.slick-current {
-  height: 100% !important;
-}
-
-.slick-problem {
-  height: 100% !important;
 }

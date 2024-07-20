@@ -1,24 +1,24 @@
-// Slider 
-$(document).ready(function() {
-  $(".heading-slider").slick({
-    infinite: true,
-    prevArrow: $(".btn-prev"),
-    nextArrow: $(".btn-next"),
-  });
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  mousewheel: true,
+  navigation: {
+    nextEl: null,
+    prevEl: null,
+  },
 });
 
-// Function to rotate the image
-function rotateImage(degree) {
-  currentAngle += degree;
-  const image = $('.iamsun');
-  image.css('transform', `rotate(${currentAngle}deg)`);
-}
+let rotationAngle = 0;
+const rotatableImage = document.querySelector('.iamsun');
 
-let currentAngle = 0;
-$('.btn-prev').click(function() {
-  rotateImage(-30);
+document.querySelector('.btn-prev').addEventListener('click', () => {
+  swiper.slidePrev();
+  rotationAngle -= 30;
+  rotatableImage.style.transform = `rotate(${rotationAngle}deg)`;
 });
 
-$('.btn-next').click(function() {
-  rotateImage(30);
+document.querySelector('.btn-next').addEventListener('click', () => {
+  swiper.slideNext();
+  rotationAngle += 30;
+  rotatableImage.style.transform = `rotate(${rotationAngle}deg)`;
 });
