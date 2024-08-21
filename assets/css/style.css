@@ -39,9 +39,9 @@ body {
 
 .common-btn {
   width: 18.125rem;
-  line-height: 6.125rem;
+  line-height: 6.525rem;
   display: block;
-  font-size: 1.76rem;
+  font-size: 1.431rem;
   color: var(--primary-light);
   text-transform: uppercase;
   letter-spacing: 0.175rem;
@@ -53,9 +53,17 @@ body {
   cursor: pointer;
 }
 
+.common-btn a {
+  color: var(--primary-light);
+}
+
 .common-btn:hover {
   transition: 0.5s;
   background-image: url(../images/btn-bg-hover.png);
+}
+
+.common-btn:hover a {
+  color: var(--primary-color);
 }
 
 h1,
@@ -231,10 +239,11 @@ p {
 
 .left .common-btn {
   background-image: url(../images/btn-hero-bg.png);
+  font-size: 1.76rem;
 }
 
-.left .common-btn a {
-  color: var(--primary-light);
+.left .common-btn:hover a {
+  color: inherit;
 }
 
 .left h1 {
@@ -290,6 +299,7 @@ p {
 .welcome-section {
   padding: 165px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .welcome-section::after {
@@ -349,4 +359,66 @@ p {
 
 .welcome-row .welcome-card:nth-child(4)::after {
   display: none;
+}
+
+/*Who we are section*/
+
+.whoweare {
+  position: relative;
+}
+
+.whoweare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whoweare h2 {
+  text-align: left;
+  line-height: 1;
+}
+
+.whoweare-row .row-right p:nth-child(2) {
+  padding: 40px 0;
+  font-size: 22px;
+}
+
+.row-right p span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.row-right p {
+  line-height: 1.5;
+}
+
+.row-right p:nth-child(3) {
+  line-height: 2;
+  padding-bottom: 30px;
+}
+
+.whoweare-row .row-right {
+  width: 44%;
+}
+
+.whoweare::before {
+  content: "";
+  background: url("/assets/images/an-img-08.png") no-repeat;
+  position: absolute;
+  bottom: 100px;
+  right: 70px;
+  width: 80px;
+  height: 80px;
+  z-index: -1;
+}
+
+.whoweare::after {
+  content: "";
+  background: url("/assets/images/star.png") no-repeat;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  width: 80px;
+  height: 80px;
+  z-index: -1;
 }
