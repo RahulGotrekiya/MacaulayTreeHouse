@@ -75,7 +75,9 @@ h2 {
   line-height: 1.2;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   font-size: 4.5rem;
   text-transform: uppercase;
   word-spacing: -0.1rem;
@@ -364,6 +366,7 @@ p {
 /*Who we are section*/
 
 .whoweare {
+  padding-bottom: 110px;
   position: relative;
 }
 
@@ -405,7 +408,7 @@ p {
   content: "";
   background: url("/assets/images/an-img-08.png") no-repeat;
   position: absolute;
-  bottom: 100px;
+  bottom: 230px;
   right: 70px;
   width: 80px;
   height: 80px;
@@ -421,4 +424,138 @@ p {
   width: 80px;
   height: 80px;
   z-index: -1;
+}
+
+/*programs section*/
+
+.programs {
+  position: relative;
+  background: url(../images/programs-bg.png);
+  padding: 75px 0;
+}
+
+.programs-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.programs h2 {
+  padding: 55px 0 90px 0;
+}
+
+.programs-card:nth-child(2) .programs-img a > img {
+  margin-bottom: 40px;
+}
+
+.programs-card img:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  filter: brightness(0.7);
+}
+
+.programs-card:hover .programs-card-link {
+  background-color: var(--secondary-color);
+  transform: translate(0, -10%);
+  cursor: pointer;
+}
+
+.programs-card:hover .programs-btn {
+  background-color: var(--primary-color);
+  transform: translate(-50%, 0);
+}
+
+.programs-card:hover .programs-btn img {
+  transform: rotate(45deg);
+  filter: invert(1);
+}
+
+.programs-card,
+.programs-card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.programs-card-link {
+  max-height: 265px;
+  width: 80%;
+  padding: 2.2rem 0 5.2rem 0;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: var(--primary-light);
+  position: relative;
+  top: -5.5rem;
+  justify-content: space-between;
+}
+
+.programs-card:nth-child(2) .programs-card-link {
+  top: -6.5rem;
+}
+
+.programs-card-link h3 {
+  font-size: 3.5rem;
+}
+
+.programs-card-link p {
+  padding-top: 40px;
+  font-size: 2.491rem;
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+}
+
+.programs-btn {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -50px;
+}
+
+.programs-card:nth-child(3) .programs-card-link p {
+  padding-top: 10px;
+}
+
+.programs-card:nth-child(3) .programs-card-link {
+  padding-top: 1rem;
+}
+
+.programs .common-btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+}
+
+.programs::before {
+  content: "";
+  background: url("/assets/images/circle.png") no-repeat;
+  position: absolute;
+  bottom: 750px;
+  right: 1px;
+  width: 47px;
+  height: 47px;
+}
+
+.programs::after {
+  content: "";
+  background: url("/assets/images/icon-tool-05.png") no-repeat;
+  position: absolute;
+  top: -25px;
+  left: 22px;
+  width: 80px;
+  height: 80px;
+}
+
+.programs .container::before {
+  content: "";
+  background: url("/assets/images/icon-tool-02.png") no-repeat;
+  position: absolute;
+  bottom: 210px;
+  left: 55px;
+  width: 50px;
+  height: 50px;
 }
