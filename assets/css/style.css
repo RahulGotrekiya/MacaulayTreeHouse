@@ -559,3 +559,94 @@ p {
   width: 50px;
   height: 50px;
 }
+
+/*summercamp section*/
+
+.summer-camp {
+  padding: 235px 0 120px 0;
+}
+
+.summer-camp::before {
+  content: "";
+  background: url("/assets/images/camp-bg.png") no-repeat;
+  position: absolute;
+  bottom: 210px;
+  left: 55px;
+  width: 50px;
+  height: 50px;
+}
+
+.camp-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.camp-btns .common-btn:first-child {
+  width: 18.325rem;
+  background: url(../images/btn-reg.png) no-repeat center;
+}
+
+.camp-btns .common-btn:first-child:hover {
+  background: url(../images/btn-reg-hover.png) no-repeat center;
+}
+
+.camp-btns .common-btn:last-child {
+  width: 26.125rem;
+  background: url(../images/btn-pre-deb.png) no-repeat center;
+}
+
+.camp-btns .common-btn:last-child:hover {
+  background: url(../images/btn-pre-deb-hover.png) no-repeat center;
+}
+
+.camp-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.camp-row .camp-right {
+  width: 56.5%;
+}
+
+.camp-headings h2 {
+  text-align: left;
+  color: var(--primary-color);
+}
+
+.camp-headings h3 {
+  text-align: left;
+  font-size: 150px;
+}
+
+.camp-left img {
+  position: relative;
+  right: 14px;
+  bottom: 28px;
+}
+
+.camp-right p {
+  padding: 50px 0;
+  font-size: 1.25rem;
+  line-height: 1.9;
+}
+
+.camp-right > a {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--primary-dark);
+}
+
+.camp-right > a:hover {
+  color: var(--secondary-color);
+}
+
+.camp-right > a,
+.camp-right p {
+  padding-left: 10px;
+}
+
+.camp-btns {
+  padding-top: 50px;
+}
