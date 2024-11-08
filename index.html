@@ -16,7 +16,7 @@
     <!--Header-->
 
     <header>
-      <div class="full-container">
+      <div class="header-container">
         <div class="logo">
           <a href="index.html">
             <img src="assets/images/main-logo.png" alt="logo" />
@@ -60,7 +60,7 @@
           <div class="container">
             <div class="heading-block">
               <div class="left">
-                <div class="swiper">
+                <div class="swiper swiper-hero">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <h1>Enriching Lives<br />Since 1990</h1>
@@ -81,15 +81,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="hero-arrows">
-                    <button class="btn-prev" type="button">
+                  <div class="swiper-arrows">
+                    <button class="btn-prev btn-prev-hero" type="button">
                       <img src="assets/images/prev-arrow.png" alt="<" />
                     </button>
-                    <button class="btn-next" type="button">
+                    <button class="btn-next btn-next-hero" type="button">
                       <img src="assets/images/next-arrow.png" alt=">" />
                     </button>
-
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                   </div>
                 </div>
               </div>
@@ -266,7 +264,6 @@
       <!--programs section- end-->
 
       <!--SummerCamp section-->
-      <!-- NOTE: bg images and some final details are pending -->
       <section class="summer-camp">
         <div class="container">
           <div class="camp-row">
@@ -301,8 +298,62 @@
           </div>
         </div>
       </section>
+      <div class="container">
+        <img src="assets/images/line.png" alt="" />
+      </div>
 
       <!--SummerCamp section end-->
+
+      <!--gallery section-->
+
+      <section class="gallery">
+        <div class="full-container">
+          <h2>Gallery of our classes</h2>
+          <div class="gallery-row">
+            <div class="swiper swiper-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-3.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-4.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-5.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-6.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-7.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-8.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/gallery-9.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-arrows gallery-arrows">
+              <button class="btn-prev gallery-btn-prev" type="button">
+                <img src="assets/images/prev-arrow.png" alt="<" />
+              </button>
+              <button class="btn-next gallery-btn-next" type="button">
+                <img src="assets/images/next-arrow.png" alt=">" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--gallery section end-->
     </main>
 
     <!--Main end-->

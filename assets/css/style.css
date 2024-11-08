@@ -37,6 +37,17 @@ body {
   color: var(--primary-dark);
 }
 
+.full-container {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1408px;
+  width: 100%;
+}
+
 .common-btn {
   width: 18.125rem;
   line-height: 6.525rem;
@@ -96,7 +107,7 @@ p {
 
 /* Header */
 
-.full-container {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,12 +120,6 @@ p {
   background-color: var(--primary-light);
   box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.27);
   border-radius: 0 0 20px 20px;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1408px;
-  width: 100%;
 }
 
 .logo a {
@@ -268,20 +273,20 @@ p {
   top: 221px;
 }
 
-.hero-arrows {
+.swiper-arrows {
   padding-top: 150px;
   display: flex;
   gap: 23px;
 }
 
-.hero-arrows button {
+.swiper-arrows button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.hero-arrows .btn-prev:active img,
-.hero-arrows .btn-next:active img {
+.swiper-arrows .btn-prev:active img,
+.swiper-arrows .btn-next:active img {
   transform: scale(0.86);
 }
 
@@ -306,7 +311,7 @@ p {
 
 .welcome-section::after {
   content: "";
-  background: url("/assets/images/welcome-bg.png") no-repeat;
+  background: url("../images/welcome-bg.png") no-repeat;
   position: absolute;
   top: 365px;
   left: 60px;
@@ -406,7 +411,7 @@ p {
 
 .whoweare::before {
   content: "";
-  background: url("/assets/images/an-img-08.png") no-repeat;
+  background: url("../images/an-img-08.png") no-repeat;
   position: absolute;
   bottom: 230px;
   right: 70px;
@@ -417,7 +422,7 @@ p {
 
 .whoweare::after {
   content: "";
-  background: url("/assets/images/star.png") no-repeat;
+  background: url("../images/star.png") no-repeat;
   position: absolute;
   top: 40px;
   left: 100px;
@@ -532,7 +537,7 @@ p {
 
 .programs::before {
   content: "";
-  background: url("/assets/images/circle.png") no-repeat;
+  background: url("../images/circle.png") no-repeat;
   position: absolute;
   bottom: 750px;
   right: 1px;
@@ -542,7 +547,7 @@ p {
 
 .programs::after {
   content: "";
-  background: url("/assets/images/icon-tool-05.png") no-repeat;
+  background: url("../images/icon-tool-05.png") no-repeat;
   position: absolute;
   top: -25px;
   left: 22px;
@@ -552,7 +557,7 @@ p {
 
 .programs .container::before {
   content: "";
-  background: url("/assets/images/icon-tool-02.png") no-repeat;
+  background: url("../images/icon-tool-02.png") no-repeat;
   position: absolute;
   bottom: 210px;
   left: 55px;
@@ -563,12 +568,13 @@ p {
 /*summercamp section*/
 
 .summer-camp {
-  padding: 235px 0 120px 0;
+  padding: 16rem 0 6rem 0;
+  background: url("../images/summer-bg.png") no-repeat;
 }
 
 .summer-camp::before {
   content: "";
-  background: url("/assets/images/camp-bg.png") no-repeat;
+  background: url("../images/summer-bg.png") no-repeat;
   position: absolute;
   bottom: 210px;
   left: 55px;
@@ -626,6 +632,17 @@ p {
   bottom: 28px;
 }
 
+.camp-left::after {
+  content: "";
+  background: url("../images/tree-shadow.png") no-repeat;
+  position: absolute;
+  top: 735px;
+  right: 180px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .camp-right p {
   padding: 50px 0;
   font-size: 1.25rem;
@@ -649,4 +666,51 @@ p {
 
 .camp-btns {
   padding-top: 50px;
+}
+
+/* gallery section */
+
+.gallery {
+  padding: 0 0 15rem 0;
+  background: url("../images/gallery-bg.png") no-repeat -45px 0px;
+}
+
+.gallery-row .swiper-gallery {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery h2 {
+  padding: 6rem 0 6rem 0;
+}
+
+.gallery-arrows {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.gallery-arrows .gallery-btn-next,
+.gallery-arrows .gallery-btn-prev {
+  position: absolute;
+  bottom: 130px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  z-index: 1;
+}
+
+.gallery-arrows .gallery-btn-prev {
+  left: -80px;
+}
+
+.gallery-arrows .gallery-btn-next {
+  right: -80px;
+}
+
+.gallery .gallery-row {
+  width: 75%;
+  margin: 0 auto;
 }

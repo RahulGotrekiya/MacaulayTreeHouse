@@ -1,6 +1,9 @@
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
+const swiper = new Swiper(".swiper-hero", {
+  direction: "horizontal",
   loop: true,
+  autoplay: {
+    delay: 3000,
+  },
   mousewheel: true,
   navigation: {
     nextEl: null,
@@ -8,16 +11,41 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-let rotationAngle = 0;
-const rotatableImage = document.querySelector('.iamsun');
+const swiper2 = new Swiper(".swiper-gallery", {
+  direction: "horizontal",
+  slidesPerView: 3,
+  spaceBetween: 16,
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  navigation: {
+    nextEl: ".gallery-btn-next",
+    prevEl: ".gallery-btn-prev",
+  },
+  breakpoints: {
+    1199: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+  },
+});
 
-document.querySelector('.btn-prev').addEventListener('click', () => {
+let rotationAngle = 0;
+const rotatableImage = document.querySelector(".iamsun");
+
+document.querySelector(".btn-prev-hero").addEventListener("click", () => {
   swiper.slidePrev();
   rotationAngle -= 30;
   rotatableImage.style.transform = `rotate(${rotationAngle}deg)`;
 });
 
-document.querySelector('.btn-next').addEventListener('click', () => {
+document.querySelector(".btn-next-hero").addEventListener("click", () => {
   swiper.slideNext();
   rotationAngle += 30;
   rotatableImage.style.transform = `rotate(${rotationAngle}deg)`;
