@@ -36,6 +36,31 @@ const swiper2 = new Swiper(".swiper-gallery", {
   },
 });
 
+const swiper3 = new Swiper(".swiper-testimonials", {
+  direction: "horizontal",
+  slidesPerView: 2,
+  spaceBetween: 16,
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  navigation: {
+    nextEl: ".testimonials-btn-next",
+    prevEl: ".testimonials-btn-prev",
+  },
+  breakpoints: {
+    1199: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+  },
+});
+
 let rotationAngle = 0;
 const rotatableImage = document.querySelector(".iamsun");
 
