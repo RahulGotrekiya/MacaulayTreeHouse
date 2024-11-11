@@ -61,6 +61,19 @@ const swiper3 = new Swiper(".swiper-testimonials", {
   },
 });
 
+const swiper4 = new Swiper(".swiper-news", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".news-next",
+    prevEl: ".news-prev",
+  },
+});
+
 let rotationAngle = 0;
 const rotatableImage = document.querySelector(".iamsun");
 

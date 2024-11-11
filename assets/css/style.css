@@ -11,6 +11,7 @@
   --secondary-color: #fccb00;
   --primary-dark: #2f2f2f;
   --primary-light: #fff;
+  --secondary-light: #e3e3e3;
   --footer-dark: #282728;
   --secondary-heading: #3a362c;
   --pure-black: #000;
@@ -109,6 +110,37 @@ a {
 p {
   font-size: 1.125rem;
   font-family: var(--secondary-font);
+}
+
+/* swiper css */
+
+.swiper-arrows {
+  padding-top: 150px;
+  display: flex;
+  gap: 23px;
+}
+
+.swiper-arrows button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 700px;
+  height: auto;
+  margin-left: 0 !important;
+  cursor: default;
+}
+
+.swiper-arrows .btn-prev:active img,
+.swiper-arrows .btn-next:active img {
+  transform: scale(0.86);
+}
+
+.swiper-button-disabled {
+  filter: grayscale(100%);
+  opacity: unset;
 }
 
 /* Header */
@@ -267,7 +299,7 @@ p {
   display: inline-flex;
 }
 
-.right img {
+.hero-main .right img {
   position: relative;
   left: 64px;
   top: 4px;
@@ -277,30 +309,6 @@ p {
   position: absolute;
   left: 140px;
   top: 221px;
-}
-
-.swiper-arrows {
-  padding-top: 150px;
-  display: flex;
-  gap: 23px;
-}
-
-.swiper-arrows button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.swiper-arrows .btn-prev:active img,
-.swiper-arrows .btn-next:active img {
-  transform: scale(0.86);
-}
-
-.swiper {
-  width: 700px;
-  height: auto;
-  margin-left: 0 !important;
-  cursor: default;
 }
 
 .heading-slider {
@@ -834,4 +842,84 @@ p {
   left: 25px;
   width: 100px;
   height: 100px;
+}
+
+/* News section */
+
+.news-section {
+  padding: 12.3rem 0 6rem 0;
+  position: relative;
+}
+
+.news-section::before {
+  content: "";
+  background: url("../images/circle.png") no-repeat;
+  opacity: 0.2;
+  position: absolute;
+  top: -24px;
+  right: 17px;
+  width: 50px;
+  height: 50px;
+}
+
+.news-row .left h2 {
+  text-align: left;
+}
+
+.news-section .news-row {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.news-section .news-row .left img {
+  padding-top: 7rem;
+}
+
+.news-section .news-row .left p {
+  font-size: 32px;
+  color: var(--primary-dark);
+  font-family: var(--primary-font);
+  padding: 2rem 0 0 0;
+}
+
+.news-section .right {
+  width: 41.8%;
+}
+
+.news-section .right .swiper-arrows {
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.news-section .right .swiper-news {
+  margin-top: 12rem;
+  width: 100%;
+}
+
+.news-section .news-content h4 {
+  font-size: 26px;
+  color: var(--primary-color);
+  line-height: 3rem;
+  text-align: left;
+}
+
+.news-section .news-content p:first-of-type {
+  margin: 1rem 0;
+  font-size: 25px;
+  color: #3a362c;
+  font-family: var(--primary-font);
+}
+
+.news-section .news-content .date {
+  margin: 2rem 0;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+}
+
+.news-section .news-content hr {
+  opacity: 0.2;
+  margin-bottom: 3rem;
 }
