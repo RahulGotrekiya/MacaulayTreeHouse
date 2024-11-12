@@ -123,6 +123,10 @@ p {
   font-family: var(--secondary-font);
 }
 
+li {
+  list-style: none;
+}
+
 /* swiper css */
 
 .swiper-arrows {
@@ -215,12 +219,12 @@ p {
   color: var(--primary-color);
 }
 
-.header-menu {
+.header-togle {
   background-color: var(--primary-color);
   border-bottom-right-radius: var(--s);
 }
 
-.header-menu nav {
+.header-togle nav {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -240,6 +244,7 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 11;
 }
 
 .hamburger > div {
@@ -266,6 +271,63 @@ p {
 
 .hamburger .line:nth-child(2) {
   width: 15px;
+}
+
+.hamburger.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.header-menu.active {
+  top: 0;
+}
+
+.header-menu {
+  position: fixed;
+  background-color: var(--primary-color);
+  top: -100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+.header-menu ul li {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.header-menu ul li a {
+  color: #ffff;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.header-menu ul li a:hover {
+  color: var(--secondary-color);
+  letter-spacing: 8px;
+}
+
+.iamsun.active {
+  transform: translateX(573%) rotate(360deg);
+}
+
+.super-girl.active img {
+  transform: translate(22%, -9%);
 }
 
 /*Hero section*/
@@ -314,12 +376,14 @@ p {
   position: relative;
   left: 64px;
   top: 4px;
+  z-index: 2;
 }
 
 .hero-main > img {
   position: absolute;
   left: 140px;
   top: 221px;
+  z-index: 2;
 }
 
 .heading-slider {
