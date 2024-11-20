@@ -1,0 +1,263 @@
+@media only screen and (max-width: 1600px) {
+  .container {
+    max-width: 1360px;
+  }
+
+  .header-container {
+    width: calc(100% - 10%);
+  }
+
+  .logo img {
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .hero-section {
+    height: 900px;
+  }
+
+  .common-btn {
+    font-size: 1.46rem !important;
+    width: 15.125rem;
+    background-size: contain;
+  }
+
+  .swiper-arrows {
+    padding-top: 70px;
+    gap: 15px;
+  }
+
+  .swiper-arrows .btn-prev img,
+  .swiper-arrows .btn-next img {
+    width: 3rem;
+  }
+
+  .hero-main .right img {
+    left: 120px;
+    width: 100%;
+  }
+
+  .heading-block .left {
+    padding-top: 130px;
+  }
+
+  .super-girl.active img {
+    transform: translate(15%, -7%);
+  }
+
+  .hero-main > img {
+    width: 3.3rem;
+    left: 100px;
+    top: 200px;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .welcome-section {
+    padding: 8rem 0;
+  }
+
+  .welcome-row {
+    padding-top: 5rem;
+  }
+
+  .wc-card img {
+    width: 5rem;
+  }
+
+  .welcome-card h5 {
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+  }
+
+  p {
+    font-size: 1.025rem;
+  }
+
+  .welcome-card-text p {
+    padding: 0 36px;
+  }
+
+  .welcome-card-text {
+    padding-top: 2.3rem;
+  }
+
+  .welcome-section::after {
+    background-size: 95%;
+  }
+
+  .whoweare-row .row-right p:nth-child(2) {
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+  }
+
+  .whoweare {
+    padding-bottom: 4rem;
+  }
+
+  .whoweare-row .row-left {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+  }
+
+  .whoweare-row .row-left img {
+    width: 37rem;
+  }
+
+  .programs {
+    padding-top: 3rem;
+  }
+
+  .programs-card .programs-img a img {
+    width: 27rem;
+  }
+
+  .programs-card-link {
+    top: -6.5rem;
+  }
+
+  .programs-card:nth-child(2) .programs-card-link {
+    top: -7.5rem;
+  }
+
+  .programs-card-link h3 {
+    font-size: 3rem;
+  }
+
+  .programs-card-link p {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .programs h2 {
+    padding: 3.5rem 0;
+  }
+
+  .summer-camp {
+    padding: 12rem 0 6rem 0;
+    background-size: contain;
+  }
+
+  .camp-headings h3 {
+    font-size: 7rem;
+  }
+
+  .camp-right > a,
+  .camp-right p {
+    padding-left: 0rem;
+  }
+
+  .camp-right p {
+    padding: 2rem 0;
+    font-size: 1.15rem;
+  }
+
+  .camp-btns {
+    padding-top: 2.5rem;
+  }
+
+  .camp-left img {
+    left: 3rem;
+    bottom: 2rem;
+    width: 28rem;
+  }
+
+  .camp-left::after {
+    top: 616px;
+    right: 214px;
+    width: 93%;
+  }
+
+  .gallery {
+    padding: 0 0 8rem 0;
+    background-size: contain;
+  }
+
+  .gallery-row .swiper-slide img {
+    width: 23rem;
+  }
+
+  .gallery-arrows .gallery-btn-next,
+  .gallery-arrows .gallery-btn-prev,
+  .gallery-arrows .testimonials-btn-prev,
+  .gallery-arrows .testimonials-btn-next {
+    bottom: 11rem;
+  }
+
+  .gallery h2 {
+    padding: 6rem 0 4rem 0;
+  }
+
+  .popup-youtube img {
+    width: 28rem;
+  }
+
+  .testimonials-section h2 {
+    padding: 5rem 21rem;
+  }
+
+  .testimonial-content .parent-comment p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .testimonials-section .swiper-slide {
+    padding: 2rem 3rem;
+    height: 21rem;
+  }
+
+  .testimonial-content .parent-name p {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .testimonials-section .common-btn {
+    margin-top: 0rem;
+  }
+
+  .news-section .news-row .left img {
+    padding-top: 5rem;
+  }
+
+  .news-section .right .swiper-news {
+    margin-top: 9rem;
+  }
+
+  .news-section .news-content p:first-of-type,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .news-section .news-content p:first-of-type {
+    margin: 0.5rem 0;
+  }
+
+  .news-section .news-content .date {
+    margin: 1.2rem 0;
+    font-size: 1rem;
+  }
+
+  .footer-main .col-left p {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .footer-main .contact-info a,
+  .footer-main .contact-info p {
+    font-size: 1.1rem;
+  }
+
+  .footer-main .contact-info td {
+    padding: 1rem 1.5rem 0 0;
+  }
+}

@@ -323,7 +323,7 @@ li {
 }
 
 .iamsun.active {
-  transform: translateX(573%) rotate(360deg);
+  transform: translateX(573%) rotate(360deg) !important;
 }
 
 .super-girl.active img {
