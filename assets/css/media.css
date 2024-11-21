@@ -261,3 +261,155 @@
     padding: 1rem 1.5rem 0 0;
   }
 }
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .heading-block {
+    padding-left: 3rem;
+  }
+
+  .hero-main .right img {
+    top: 3rem;
+  }
+
+  .header-menu ul li a {
+    font-size: 2.8rem;
+  }
+
+  .heder-menu ul {
+    margin-bottom: 10rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .whoweare-row .row-right p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .programs-card .programs-img a img {
+    width: 23rem;
+  }
+
+  .programs-card-link h3 {
+    font-size: 2.5rem;
+  }
+
+  .programs-card-link p {
+    font-size: 1.7rem;
+  }
+
+  .programs-card-link p {
+    padding-top: 0.5rem;
+  }
+
+  .btn-center {
+    padding: unset;
+  }
+
+  .container .line {
+    width: 100%;
+  }
+
+  .camp-headings h3 {
+    font-size: 6.5rem;
+  }
+
+  .camp-left img {
+    left: 0rem;
+    width: 26rem;
+  }
+
+  .camp-left::after {
+    top: 35.5rem;
+    right: 16rem;
+  }
+
+  .camp-btns .common-btn:first-child,
+  .camp-btns .common-btn:last-child {
+    background-size: contain;
+  }
+
+  .gallery-row .swiper-slide img {
+    width: 21rem;
+  }
+
+  .gallery-arrows .gallery-btn-next,
+  .gallery-arrows .gallery-btn-prev,
+  .gallery-arrows .testimonials-btn-prev,
+  .gallery-arrows .testimonials-btn-next {
+    bottom: 10.5rem;
+  }
+
+  .testimonials-section {
+    background-position-y: 10%;
+  }
+
+  .testimonial-content .parent-comment p {
+    line-height: 1.8rem;
+  }
+
+  .testimonials-section .swiper-slide {
+    padding: 1.5rem 3rem;
+    height: 18.5rem;
+  }
+
+  .news-section {
+    padding-top: 8rem;
+  }
+
+  .news-section .news-row .left img {
+    padding-top: 4rem;
+    width: 38rem;
+  }
+
+  .news-section .right .swiper-news {
+    margin-top: 7rem;
+  }
+
+  .news-section .news-row .left p {
+    font-size: 1.8rem;
+  }
+
+  .news-section .news-content hr {
+    margin-bottom: 1.8rem;
+  }
+
+  .footer-main h4 {
+    font-size: 1.5rem;
+  }
+
+  .footer-main .col-left p {
+    font-size: 1.2rem;
+  }
+
+  .footer-main .contact-info a,
+  .footer-main .contact-info p {
+    font-size: 1rem;
+  }
+
+  .footer-main .contact-info td {
+    padding-top: 0.8rem;
+  }
+
+  .copyright p,
+  .copyright a {
+    font-size: 1rem;
+  }
+
+  .footer-navbar .navbar a {
+    font-size: 1rem;
+  }
+}
