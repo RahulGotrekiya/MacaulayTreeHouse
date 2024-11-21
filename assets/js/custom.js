@@ -39,12 +39,6 @@ const swiper2 = new Swiper(".swiper-gallery", {
     1199: {
       slidesPerView: 3,
     },
-    991: {
-      slidesPerView: 2,
-    },
-    600: {
-      slidesPerView: 1,
-    },
   },
 });
 

@@ -413,3 +413,283 @@
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hero-section {
+    height: 700px;
+    background-size: cover;
+  }
+
+  .header-container {
+    height: 6rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .logo img {
+    width: 70%;
+  }
+
+  .hamburger {
+    background-size: contain;
+  }
+
+  .header-contact {
+    padding: 0 2rem;
+  }
+
+  .header-contact a {
+    font-size: 1.6rem;
+  }
+
+  .header-contact img {
+    width: 3rem;
+  }
+
+  .heading-block .left {
+    padding-top: 4rem;
+  }
+
+  .common-btn {
+    width: 12rem;
+    font-size: 1.2rem !important;
+  }
+
+  .left h1 {
+    padding-bottom: 1rem;
+  }
+
+  .swiper-arrows {
+    padding-top: 2rem;
+  }
+
+  .swiper-arrows .btn-prev img,
+  .swiper-arrows .btn-next img {
+    width: 2.8rem;
+  }
+
+  .swiper {
+    width: 500px;
+  }
+
+  .hero-main .right img {
+    top: 1rem;
+  }
+
+  .hero-main > img {
+    top: 9rem;
+  }
+
+  .welcome-section {
+    padding: 6rem 0;
+  }
+
+  .welcome-row {
+    padding-top: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .welcome-card h5 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .welcome-card-text {
+    padding-top: 1.8rem;
+  }
+
+  .wc-card img {
+    width: 4.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .whoweare-row .row-left img {
+    width: 30rem;
+  }
+
+  .whoweare-row .row-right p:nth-child(2) {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .welcome-section::after {
+    top: 10rem;
+  }
+
+  .programs-card .programs-img a img {
+    width: 18rem;
+  }
+
+  .programs-card-link h3 {
+    font-size: 2.3rem;
+  }
+
+  .programs-btn {
+    height: 90px;
+    width: 90px;
+  }
+
+  .programs {
+    background-size: cover;
+  }
+
+  .camp-btns {
+    flex-wrap: wrap;
+  }
+
+  .camp-btns .common-btn:first-child {
+    width: 15rem;
+  }
+
+  .camp-btns .common-btn:last-child {
+    width: 21rem;
+  }
+
+  .camp-btns {
+    gap: unset;
+  }
+
+  .camp-headings h3 {
+    font-size: 5rem;
+  }
+
+  .camp-right p {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .camp-btns .common-btn {
+    width: 18.125rem;
+    line-height: 5rem;
+  }
+
+  .camp-btns {
+    padding-top: 1.5rem;
+  }
+
+  .camp-left img {
+    width: 24rem;
+  }
+
+  .camp-left::after {
+    top: 33rem;
+  }
+
+  .summer-camp {
+    padding: 8rem 0 6rem 0;
+  }
+
+  .gallery-row .swiper-slide img {
+    width: 16rem;
+  }
+
+  .gallery-arrows .gallery-btn-next,
+  .gallery-arrows .gallery-btn-prev,
+  .gallery-arrows .testimonials-btn-prev,
+  .gallery-arrows .testimonials-btn-next {
+    bottom: 7rem;
+  }
+
+  .gallery {
+    padding: 0 0 6rem 0;
+  }
+
+  .popup-youtube img {
+    width: 20rem;
+  }
+
+  .testimonials-section h2 {
+    padding: 0 21rem 5rem 21rem;
+  }
+
+  .testimonials-section {
+    padding: 6rem 0 4rem 0;
+  }
+
+  .parent-header img {
+    width: 3.5rem;
+  }
+
+  .testimonials-section {
+    background-size: cover;
+  }
+
+  .testimonial-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-content .parent-name p {
+    font-size: 1rem;
+  }
+
+  .testimonial-content .parent-header {
+    column-gap: 1.5rem;
+  }
+
+  .testimonial-content .parent-comment p {
+    line-height: 1.6rem;
+    padding-top: 0.8rem;
+  }
+
+  .testimonials-section .swiper-slide {
+    padding: 1.5rem;
+    height: 15.5rem;
+  }
+
+  .news-section {
+    padding-top: 6rem;
+  }
+
+  .news-section .news-row .left img {
+    width: 30rem;
+  }
+
+  .news-section .news-content p:first-of-type,
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  .news-section .news-content hr {
+    margin-bottom: 1rem;
+  }
+
+  .news-section .news-row .left p {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    padding: 8rem 0 3rem 0;
+  }
+
+  .footer-main h4 {
+    font-size: 1.4rem;
+  }
+
+  .footer-main .social-media img {
+    width: 1.3rem;
+  }
+
+  .footer-navbar {
+    padding: 2rem 0;
+  }
+
+  .footer-navbar .navbar ul {
+    gap: 3rem;
+  }
+
+  .header-menu ul li a {
+    font-size: 2rem;
+  }
+}
