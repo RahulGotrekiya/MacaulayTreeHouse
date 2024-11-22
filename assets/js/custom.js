@@ -10,7 +10,7 @@ hamburger.addEventListener("click", function () {
   girl.classList.toggle("active");
 });
 
-const swiper = new Swiper(".swiper-hero", {
+const heroSwiper = new Swiper(".swiper-hero", {
   direction: "horizontal",
   loop: true,
   autoplay: {
@@ -23,9 +23,9 @@ const swiper = new Swiper(".swiper-hero", {
   },
 });
 
-const swiper2 = new Swiper(".swiper-gallery", {
+const gallerySwiper = new Swiper(".swiper-gallery", {
   direction: "horizontal",
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 16,
   autoplay: {
     delay: 3000,
@@ -36,13 +36,16 @@ const swiper2 = new Swiper(".swiper-gallery", {
     prevEl: ".gallery-btn-prev",
   },
   breakpoints: {
-    1199: {
+    992: {
       slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2,
     },
   },
 });
 
-const swiper3 = new Swiper(".swiper-testimonials", {
+const testimonialSwiper = new Swiper(".swiper-testimonials", {
   direction: "horizontal",
   slidesPerView: 2,
   spaceBetween: 16,
@@ -55,19 +58,13 @@ const swiper3 = new Swiper(".swiper-testimonials", {
     prevEl: ".testimonials-btn-prev",
   },
   breakpoints: {
-    1199: {
+    992: {
       slidesPerView: 2,
-    },
-    991: {
-      slidesPerView: 2,
-    },
-    600: {
-      slidesPerView: 1,
     },
   },
 });
 
-const swiper4 = new Swiper(".swiper-news", {
+const NewsSwiper = new Swiper(".swiper-news", {
   direction: "horizontal",
   slidesPerView: 1,
   spaceBetween: 30,

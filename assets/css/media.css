@@ -835,3 +835,213 @@
     margin-top: 3rem;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 740px;
+  }
+
+  .hero-section {
+    height: 600px;
+  }
+
+  .heading-block {
+    padding: 0;
+  }
+
+  .left h1 {
+    padding-bottom: 0rem;
+  }
+
+  .swiper-arrows {
+    padding-top: 1rem;
+    gap: 10px;
+  }
+
+  .heading-block .left {
+    padding-top: 3rem;
+  }
+
+  .hero-main > img {
+    left: 3rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .common-btn {
+    width: 11rem;
+    font-size: 1rem !important;
+  }
+
+  .welcome-row .welcome-card {
+    width: 20rem;
+    height: 13rem;
+  }
+
+  .welcome-row {
+    padding-top: 2rem;
+  }
+
+  .whoweare-row .row-right p:nth-child(2) {
+    font-size: 0.9rem;
+  }
+
+  .whoweare-row .row-left img {
+    width: 25rem;
+    bottom: 1.5rem;
+    position: relative;
+  }
+
+  .row-right p:nth-child(3) {
+    line-height: 1.5;
+    padding-bottom: 0.8rem;
+  }
+
+  .programs-row {
+    justify-content: space-evenly;
+    gap: 0 1.5rem;
+  }
+
+  .camp-headings h3 {
+    font-size: 4rem;
+  }
+
+  .camp-row .camp-right {
+    width: 50%;
+  }
+
+  .camp-left img {
+    left: -1rem;
+    bottom: 1rem;
+  }
+
+  .camp-right > a {
+    font-size: 1.1rem;
+  }
+
+  .camp-btns .common-btn:first-child {
+    width: 13rem;
+  }
+
+  .camp-btns .common-btn:last-child {
+    width: 18rem;
+  }
+
+  .camp-btns .common-btn {
+    line-height: 4.5rem;
+  }
+
+  .camp-btns {
+    padding-top: 1rem;
+  }
+
+  .camp-left::after {
+    top: 31.2rem;
+    right: 18rem;
+  }
+
+  .summer-camp {
+    padding: 5rem 0;
+  }
+
+  .gallery-row .swiper-slide img {
+    width: 18rem;
+  }
+
+  .gallery-arrows .gallery-btn-next,
+  .gallery-arrows .gallery-btn-prev,
+  .gallery-arrows .testimonials-btn-prev,
+  .gallery-arrows .testimonials-btn-next {
+    bottom: 5rem;
+  }
+
+  .gallery h2 {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .gallery {
+    padding: 0 0 5rem 0;
+  }
+
+  .gallery-arrows .gallery-btn-next {
+    right: -4rem;
+  }
+
+  .gallery-arrows .gallery-btn-prev {
+    left: -4rem;
+  }
+
+  .gallery .gallery-row {
+    width: 65%;
+  }
+
+  .gallery-arrows .gallery-btn-next,
+  .gallery-arrows .gallery-btn-prev {
+    bottom: 6rem;
+  }
+
+  .testimonials-section {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .gallery-arrows .testimonials-btn-next {
+    bottom: 4rem;
+  }
+
+  .news-section .news-row .left img {
+    width: 23rem;
+    padding-top: 2rem;
+  }
+
+  .news-section .right .swiper-news {
+    margin-top: 8rem;
+  }
+
+  .news-section .news-content hr {
+    margin-bottom: 0.5rem;
+  }
+
+  .news-section .news-content .date {
+    margin: 1rem 0;
+  }
+
+  .footer-main {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem 0;
+  }
+
+  .footer-main .col-left {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-left h4 {
+    line-height: 2rem;
+  }
+
+  .footer-main .col-center,
+  .footer-main .col-right {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .footer-main h4 {
+    text-align: center;
+  }
+
+  .footer-navbar .navbar ul {
+    gap: 2rem;
+  }
+
+  .copyright p,
+  .copyright a {
+    font-size: 0.8rem;
+  }
+}
