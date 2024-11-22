@@ -705,3 +705,133 @@
     right: 1rem;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .heading-block {
+    padding: 0 6rem;
+  }
+
+  .header-contact {
+    padding: 0 1.5rem;
+  }
+
+  .logo img {
+    width: 18rem;
+  }
+
+  .header-contact a {
+    font-size: 1.4rem;
+  }
+
+  .welcome-section {
+    padding: 5rem 0 3rem 0;
+  }
+
+  .welcome-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .welcome-row .welcome-card:nth-of-type(2)::after {
+    display: none;
+  }
+
+  .welcome-row .welcome-card:nth-of-type(1)::after,
+  .welcome-row .welcome-card:nth-of-type(3)::after {
+    height: 8rem;
+    top: 0%;
+  }
+
+  .welcome-row .welcome-card {
+    width: 23rem;
+    height: 14rem;
+  }
+
+  .programs-row {
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .programs-btn {
+    height: 80px;
+    width: 80px;
+  }
+
+  .programs-card-link {
+    max-height: 11.5rem;
+  }
+
+  .programs-card-link p {
+    font-size: 1.3rem;
+  }
+
+  .programs-card:nth-child(2) .programs-img a > img {
+    margin-bottom: 2rem;
+  }
+
+  .programs h2 {
+    padding: 2.5rem 0;
+  }
+
+  .summer-camp {
+    padding: 6rem 0 6rem 0;
+  }
+
+  .camp-left img {
+    width: 22rem;
+    left: 2rem;
+  }
+
+  .camp-left::after {
+    top: 31.5rem;
+  }
+
+  .camp-right p {
+    font-size: 0.9rem;
+  }
+
+  .gallery-row .swiper-slide img {
+    width: 15rem;
+  }
+
+  .gallery-arrows .gallery-btn-next,
+  .gallery-arrows .gallery-btn-prev,
+  .gallery-arrows .testimonials-btn-prev,
+  .gallery-arrows .testimonials-btn-next {
+    bottom: 6rem;
+  }
+
+  .testimonials-section h2 {
+    padding: 0 15rem 3rem 15rem;
+  }
+
+  .testimonial-content .parent-comment p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+
+  .testimonials-section .swiper-slide {
+    height: 13rem;
+  }
+
+  .news-section .news-row .left img {
+    padding-top: 3rem;
+  }
+
+  .news-section .right .swiper-news {
+    margin-top: 6rem;
+  }
+
+  .news-section .right {
+    width: 44%;
+  }
+
+  footer {
+    padding: 6rem 0 3rem 0;
+  }
+
+  .footer-navbar {
+    margin-top: 3rem;
+  }
+}
