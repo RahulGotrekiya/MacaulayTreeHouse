@@ -673,19 +673,23 @@ li {
 .camp-btns .common-btn:first-child {
   width: 18.325rem;
   background: url(../images/btn-reg.png) no-repeat center;
+  background-size: contain;
 }
 
 .camp-btns .common-btn:first-child:hover {
   background: url(../images/btn-reg-hover.png) no-repeat center;
+  background-size: contain;
 }
 
 .camp-btns .common-btn:last-child {
   width: 26.125rem;
   background: url(../images/btn-pre-deb.png) no-repeat center;
+  background-size: contain;
 }
 
 .camp-btns .common-btn:last-child:hover {
   background: url(../images/btn-pre-deb-hover.png) no-repeat center;
+  background-size: contain;
 }
 
 .camp-row {
@@ -992,6 +996,11 @@ li {
   margin-bottom: 3rem;
 }
 
+.news-next,
+.news-prev {
+  cursor: pointer;
+}
+
 /* footer */
 
 footer {
@@ -1046,7 +1055,6 @@ footer::before {
 .footer-main .social-media a:hover img {
   filter: brightness(0) saturate(100%) invert(13%) sepia(90%) saturate(4098%)
     hue-rotate(73deg) brightness(92%) contrast(93%);
-  width: 1%;
 }
 
 .footer-main .contact-info td {
