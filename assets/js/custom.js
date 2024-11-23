@@ -39,7 +39,7 @@ const gallerySwiper = new Swiper(".swiper-gallery", {
     992: {
       slidesPerView: 3,
     },
-    600: {
+    769: {
       slidesPerView: 2,
     },
   },
@@ -47,7 +47,7 @@ const gallerySwiper = new Swiper(".swiper-gallery", {
 
 const testimonialSwiper = new Swiper(".swiper-testimonials", {
   direction: "horizontal",
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 16,
   autoplay: {
     delay: 3000,
@@ -58,7 +58,7 @@ const testimonialSwiper = new Swiper(".swiper-testimonials", {
     prevEl: ".testimonials-btn-prev",
   },
   breakpoints: {
-    992: {
+    769: {
       slidesPerView: 2,
     },
   },
