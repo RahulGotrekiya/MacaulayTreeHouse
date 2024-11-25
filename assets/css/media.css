@@ -1297,3 +1297,137 @@
     padding: 6rem 0 2rem 0;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: calc(100% - 20%);
+  }
+
+  .swiper {
+    width: 330px;
+  }
+
+  .hero-main .right img {
+    top: 2rem;
+    left: 80px;
+  }
+
+  .welcome-row .welcome-card {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .row-right p {
+    line-height: 1.2;
+  }
+
+  .whoweare-row .row-right p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+
+  .whoweare-row .row-left img {
+    width: 20rem;
+  }
+
+  .row-right p:nth-child(3) {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  .programs-card .programs-img a img {
+    width: 14rem;
+  }
+
+  .programs-card-link h3 {
+    font-size: 2rem;
+  }
+
+  .programs-card-link {
+    max-height: 10rem;
+  }
+
+  .common-btn {
+    line-height: 4.5rem;
+  }
+
+  .camp-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .camp-left::after {
+    top: 23.5rem;
+    right: 0rem;
+  }
+
+  .camp-row .camp-right {
+    width: 100%;
+  }
+
+  .camp-btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .camp-headings h2,
+  .camp-headings h3 {
+    text-align: center;
+  }
+
+  .gallery .gallery-row,
+  .testimonials-section .testimonials-row {
+    width: 60%;
+  }
+
+  .gallery-arrows .testimonials-btn-next {
+    right: -3rem;
+  }
+
+  .gallery-arrows .testimonials-btn-prev {
+    left: -3rem;
+  }
+
+  .news-section .right .swiper-arrows {
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .news-section .news-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news-row .left h2 {
+    text-align: center;
+  }
+
+  .news-section .news-content p:first-of-type,
+  h4 {
+    text-align: center;
+  }
+
+  .news-section .right,
+  .news-section .left {
+    width: 75%;
+  }
+
+  .news-section .right .swiper-news {
+    margin: 2rem 0 4rem 0;
+  }
+
+  .footer-main .contact-info a,
+  .footer-main .contact-info p {
+    font-size: 0.8rem;
+  }
+
+  .footer-navbar {
+    margin-top: 2rem;
+  }
+}
