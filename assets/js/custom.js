@@ -18,15 +18,15 @@ const heroSwiper = new Swiper(".swiper-hero", {
   },
   mousewheel: true,
   navigation: {
-    nextEl: null,
-    prevEl: null,
+    nextEl: ".btn-next-hero",
+    prevEl: ".btn-prev-hero",
   },
 });
 
 const gallerySwiper = new Swiper(".swiper-gallery", {
   direction: "horizontal",
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 0,
   autoplay: {
     delay: 3000,
   },
@@ -48,7 +48,7 @@ const gallerySwiper = new Swiper(".swiper-gallery", {
 const testimonialSwiper = new Swiper(".swiper-testimonials", {
   direction: "horizontal",
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 0,
   autoplay: {
     delay: 3000,
   },
