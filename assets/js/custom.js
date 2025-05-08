@@ -1,15 +1,3 @@
-let hamburger = document.querySelector(".hamburger");
-let nav = document.querySelector(".header-menu");
-let sun = document.querySelector(".iamsun");
-let girl = document.querySelector(".super-girl");
-
-hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("isactive");
-  nav.classList.toggle("active");
-  sun.classList.toggle("active");
-  girl.classList.toggle("active");
-});
-
 const heroSwiper = new Swiper(".swiper-hero", {
   direction: "horizontal",
   loop: true,
