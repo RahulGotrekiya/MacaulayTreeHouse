@@ -1,0 +1,77 @@
+:root {
+  /*colors*/
+  --primary-color: #006719;
+  --secondary-color: #fccb00;
+  --primary-dark: #2f2f2f;
+  --primary-light: #fff;
+  --secondary-light: #e3e3e3;
+  --footer-dark: #282728;
+  --secondary-heading: #3a362c;
+  --pure-black: #000;
+
+  /*Fonts*/
+  --primary-font: "Londrina Solid", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+
+  /*spacing*/
+  --s: 20px;
+}
+
+header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Banner Section */
+
+.about-banner {
+  height: 700px;
+  background: url(../images/aboutbanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner-content {
+  height: 700px;
+  color: var(--primary-light) !important; 
+  align-items: center;
+  align-content: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10.4rem;
+  top: 8.4rem;
+  left: 0.5rem;
+}
+
+.banner-content h1 {
+  color: var(--primary-light);
+}
+
+.breadcrumbs {
+  font-size: 24px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  width: 100%;
+  color: var(--primary-light);
+}
+
+.breadcrumbs a:hover {
+  color: var(--secondary-color);
+}
+
