@@ -75,3 +75,59 @@ header {
   color: var(--secondary-color);
 }
 
+/* About section */
+
+.about-section {
+  background: url("../images/gallery-bg.png") no-repeat -45px 0px;
+  background-size: contain;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.about-section h2 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.about-section span {
+  color: var(--primary-color);
+}
+
+.about-section span:nth-child(1) {
+  font-weight: 600;
+}
+
+.master-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.master-row .col-left {
+  width: 44%;
+}
+
+.master-row .col-left p:nth-child(2) {
+  padding: 40px 0;
+  font-size: 22px;
+}
+
+.master-row .col-left p:nth-child(3) {
+  padding: 10px 0 40px 0;
+  line-height: 34px;
+}
+
+.sub-title {
+  font-size: 22px;
+  line-height: 34px;
+  color: #2f2f2f;
+}
+
+.master-row .col-right {
+  width: 50%;
+}
+
+.about-section .col-right img {
+  position: relative;
+  top: 15px;
+}
