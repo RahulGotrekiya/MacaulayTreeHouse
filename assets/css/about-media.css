@@ -30,11 +30,66 @@
   .master-row .col-left {
     width: 47%;
   }
+
+  .program-card-big .programs-card-link h3 {
+    font-size: 43px;
+  }
+
+  .program-card-big .programs-card-link .program-title p {
+    font-size: 1.9rem;
+  }
+
+  .programs-card-link .programs-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .programs-section h2 {
+    padding: 6rem 0;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .master-row .col-left p:nth-child(3) {
     line-height: 2;
+  }
+
+  .program-card-big .programs-card-link .programs-subtitle,
+  .program-card-big .programs-card-link:nth-child(3) .programs-subtitle {
+    padding-right: 6rem;
+  }
+
+  .program-card-big .programs-card-link h3 {
+    font-size: 38px;
+  }
+
+  .program-card-big .programs-card-link .program-title p {
+    font-size: 1.6rem;
+  }
+
+  .program-cards .program-col {
+    padding: 2.8rem;
+  }
+
+  .programs-section h2 {
+    padding: 5rem 0 3rem 0;
+  }
+
+  .programs-section .programs-btn {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .programs-card-link:hover .programs-btn {
+    background-color: var(--primary-color);
+    transform: translate(-80%, 0);
+  }
+
+  .programs-section .programs-btn {
+    bottom: 0;
+  }
+
+  .programs-btn img {
+    width: 1.2rem;
   }
 }
 
@@ -51,6 +106,18 @@
   .about-section {
     padding: 5rem 0;
   }
+
+  .program-card-big .programs-card-link h3 {
+    font-size: 33px;
+  }
+
+  .program-cards .program-col {
+    padding: 2rem;
+  }
+
+  .program-card-big .programs-card-link .program-title p {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -63,6 +130,10 @@
   .master-row .col-left p:nth-child(3) {
     padding: 0 0 1rem 0;
     line-height: 1.5;
+  }
+
+  .programs-section {
+    padding: 1.5rem 0 4rem 0;
   }
 }
 
@@ -100,6 +171,15 @@
   .about-section .col-right img {
     width: 75%;
   }
+
+  .programs-section .programs-btn {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .programs-card-link .programs-subtitle {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -110,7 +190,59 @@
   .master-row .col-left p:nth-child(2) {
     line-height: 1.5;
   }
+
+  .programs-card-link .programs-subtitle {
+    font-size: 1rem;
+  }
+
+  .program-card-big .programs-card-link {
+    max-height: fit-content;
+  }
+
+  .program-card-big .programs-card-link h3 {
+    width: 40%;
+    text-align: start;
+  }
+
+  .programs-section .programs-btn {
+    right: -5%;
+  }
+
+  .programs-card-link:hover .programs-btn {
+    transform: translate(-100%, 0);
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .program-card-big .programs-card-link .programs-subtitle,
+  .program-card-big .programs-card-link:nth-child(3) .programs-subtitle {
+    padding: 0.8rem 2.5rem 0 0;
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
+
+  .program-card-big .program-title {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .program-card-big .programs-card-link .program-title p {
+    padding: 0;
+  }
+
+  .program-card-big .programs-card-link h3 {
+    width: 100%;
+  }
+
+  .programs-card-link:hover .programs-btn {
+    transform: translate(-80%, 0);
+  }
+
+  .programs-section h2 {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .programs-section {
+    padding: 1.5rem 0 2rem 0;
+  }
 }

@@ -45,7 +45,7 @@ header {
 
 .banner-content {
   height: 700px;
-  color: var(--primary-light) !important; 
+  color: var(--primary-light) !important;
   align-items: center;
   align-content: center;
   position: relative;
@@ -80,7 +80,7 @@ header {
 .about-section {
   background: url("../images/gallery-bg.png") no-repeat -45px 0px;
   background-size: contain;
-  padding: 5rem 0;
+  padding: 5rem 0 6.5rem 0;
   overflow: hidden;
 }
 
@@ -130,4 +130,103 @@ header {
 .about-section .col-right img {
   position: relative;
   top: 15px;
+}
+
+/* programs section */
+
+.programs-section {
+  position: relative;
+  background: url("../images/explore-bg.png") no-repeat;
+  padding: 1.5rem 0 6rem 0;
+}
+
+.programs-section h2 {
+  padding: 8.5rem 0 5.5rem;
+}
+
+.program-card-big {
+  margin-right: 1.5rem;
+}
+
+.program-card-big .programs-card-link {
+  padding: 7px;
+  position: static;
+  background-color: transparent;
+  width: 100%;
+  align-items: flex-start;
+  border: 1px dashed var(--primary-color);
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  position: relative;
+  top: 0;
+  margin-bottom: 30px;
+}
+
+.program-card-big .programs-card-link:nth-child(2) {
+  border: 1px dashed #e74c26;
+}
+
+.program-card-big .programs-card-link:nth-child(3) {
+  border: 1px dashed #26e3ff;
+}
+
+.program-card-big .programs-card-link:nth-child(3) .programs-subtitle {
+  padding-right: 14rem;
+}
+
+.program-card-big .programs-card-link h3 {
+  font-size: 46px;
+  color: var(--primary-dark);
+}
+
+.program-card-big .programs-card-link .program-title p {
+  padding: 0 0 0 20px;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  align-content: center;
+}
+
+.program-card-big .program-title {
+  flex-direction: row;
+  display: flex;
+}
+
+.programs-card-link .programs-subtitle {
+  font-size: 1.125rem;
+  font-family: var(--secondary-font);
+  color: var(--primary-dark);
+  text-transform: none;
+  padding-top: 1.5rem;
+}
+
+.program-cards .program-col {
+  padding: 60px 60px;
+  background-color: var(--primary-light);
+  border-radius: inherit;
+  width: inherit;
+}
+
+.programs-btn {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  right: -35px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.programs-card-link:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
+
+.programs-card-link:hover .programs-btn {
+  background-color: var(--primary-color);
+  transform: translate(-100%, 0);
+}
+
+.programs-card-link:hover .programs-btn img {
+  transform: rotate(45deg);
+  filter: invert(1);
 }
