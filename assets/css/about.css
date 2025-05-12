@@ -206,7 +206,7 @@ header {
   width: inherit;
 }
 
-.programs-btn {
+.programs-card-link .programs-btn {
   position: absolute;
   width: 82px;
   height: 82px;
@@ -229,4 +229,91 @@ header {
 .programs-card-link:hover .programs-btn img {
   transform: rotate(45deg);
   filter: invert(1);
+}
+
+/* staff section */
+
+.staff-section {
+  padding: 7rem 0;
+  text-align: center;
+  background: url("../images/summer-bg.png") no-repeat;
+  background-size: 108%;
+  background-position: bottom;
+  background-position-y: 43rem;
+}
+
+.staff-section h2 {
+  padding-bottom: 0.8rem;
+}
+
+.staff-section p {
+  margin: 2rem 0 1.3rem 0;
+  line-height: 2;
+  padding: 0 6rem;
+}
+
+.staff-section .subtitle {
+  background-color: #f3fff6;
+  border: 1.5px dashed var(--primary-color);
+  border-radius: 50px;
+  margin: 0 7rem;
+  padding: 0.3rem;
+}
+
+.staff-section .teachers-img img {
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.staff-section .teachers-row {
+  padding: 5.3rem 0 6rem 0;
+  display: flex;
+  gap: 5.5rem;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.teachers-row h4 {
+  font-size: 28px;
+  color: var(--primary-light);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 1.2rem;
+  text-align: center;
+}
+
+.teachers-row .teachers-bg {
+  position: relative;
+}
+
+.teachers-row .teachers-bg a {
+  position: absolute;
+  top: -4rem;
+  z-index: -1;
+  left: -1.8rem;
+}
+
+.teachers-row p {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--primary-light);
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.staff-section .common-btn {
+  width: 30%;
+  background-image: url(../images/btn-staff.png) !important;
+}
+
+.staff-section .common-btn:hover {
+  background-image: url(../images/btn-staff-hover.png) !important;
+}
+
+.teachers-row .teachers-card:hover .teachers-img {
+  transform: translate(0, -5%);
+  filter: brightness(0.9);
+  scale: 105%;
 }

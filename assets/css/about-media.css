@@ -46,6 +46,45 @@
   .programs-section h2 {
     padding: 6rem 0;
   }
+
+  .staff-section .certificate-p p {
+    width: 100%;
+    padding: 0.375rem 0rem;
+    margin-top: 5px;
+  }
+
+  .staff-section p {
+    font-size: 17px;
+    padding: 0;
+  }
+
+  .staff-section .teachers-bg img {
+    width: 255px;
+  }
+
+  .staff-section .teachers-row {
+    gap: 1rem;
+  }
+
+  .teachers-row h4 {
+    font-size: 24px;
+    padding-top: 1rem;
+    line-height: 1;
+  }
+
+  .staff-section .subtitle {
+    margin: 0;
+  }
+
+  .teachers-row .teachers-bg a {
+    top: -3rem;
+    z-index: -1;
+    left: 0.375rem;
+  }
+
+  .staff-section .teachers-img img {
+    width: 81%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -91,6 +130,11 @@
   .programs-btn img {
     width: 1.2rem;
   }
+
+  .staff-section .teachers-row {
+    flex-wrap: wrap;
+    gap: 6.5rem 2rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -134,6 +178,23 @@
 
   .programs-section {
     padding: 1.5rem 0 4rem 0;
+  }
+
+  .staff-section {
+    padding: 4rem 0;
+  }
+
+  .staff-section p {
+    line-height: 1.7;
+  }
+
+  .staff-section .teachers-row {
+    padding: 3rem 0 4rem 0;
+    gap: 5rem 2rem;
+  }
+
+  .staff-section .common-btn {
+    width: 45%;
   }
 }
 
@@ -211,6 +272,10 @@
   .programs-card-link:hover .programs-btn {
     transform: translate(-100%, 0);
   }
+
+  .staff-section .common-btn {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -244,5 +309,17 @@
 
   .programs-section {
     padding: 1.5rem 0 2rem 0;
+  }
+
+  .staff-section p {
+    margin: 0.5rem 0 1.3rem 0;
+  }
+
+  .staff-section .subtitle {
+    padding: 1rem;
+  }
+
+  .staff-section .common-btn {
+    width: 78%;
   }
 }
