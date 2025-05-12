@@ -131,9 +131,27 @@
     width: 1.2rem;
   }
 
+  .staff-section .container {
+    padding: 4rem 0;
+  }
+
   .staff-section .teachers-row {
     flex-wrap: wrap;
     gap: 6.5rem 2rem;
+  }
+
+  .bod-section {
+    padding-top: 4rem;
+  }
+
+  .bod-section img {
+    margin-top: -3.5rem;
+  }
+
+  .bod-section p {
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 1rem 0 0 0;
   }
 }
 
@@ -186,6 +204,7 @@
 
   .staff-section p {
     line-height: 1.7;
+    font-size: 0.9rem;
   }
 
   .staff-section .teachers-row {
@@ -276,6 +295,10 @@
   .staff-section .common-btn {
     width: 60%;
   }
+
+  .bod-section {
+    padding-top: 3rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -321,5 +344,9 @@
 
   .staff-section .common-btn {
     width: 78%;
+  }
+
+  .bod-section img {
+    top: 5.3rem;
   }
 }

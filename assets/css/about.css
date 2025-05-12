@@ -321,3 +321,27 @@ header {
   filter: brightness(0.9);
   scale: 105%;
 }
+
+/* bod section */
+
+.bod-section {
+  padding-top: 6rem;
+}
+
+.bod-section h2 {
+  color: var(--primary-color);
+}
+
+.bod-section p {
+  text-align: center;
+  line-height: 2.2rem;
+  padding: 2.4rem 5rem 0rem 5rem;
+}
+
+.bod-section img {
+  position: relative;
+  z-index: -1;
+  top: 5.6rem;
+  left: -1px;
+  width: 100%;
+}
