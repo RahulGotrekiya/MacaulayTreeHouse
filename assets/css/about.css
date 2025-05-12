@@ -234,12 +234,16 @@ header {
 /* staff section */
 
 .staff-section {
-  padding: 7rem 0;
   text-align: center;
   background: url("../images/summer-bg.png") no-repeat;
   background-size: 108%;
   background-position: bottom;
   background-position-y: 43rem;
+}
+
+.staff-section .container {
+  padding: 7rem 0;
+  border-bottom: 1.8px dashed #ccc;
 }
 
 .staff-section h2 {
